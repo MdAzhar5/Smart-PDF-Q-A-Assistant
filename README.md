@@ -1,55 +1,50 @@
-##📄 Smart PDF Q&A Assistant
+# 📄 Smart PDF Q&A Assistant
 
-A simple tool that lets you ask questions from your PDFs and get answers instantly.
-No complicated setup, just upload your PDF and start learning!
+A simple tool that lets you **ask questions from your PDFs** and get **answers instantly**.  
+Upload your PDFs and start learning!
 
-#🔹 Features
+---
 
-Upload one or more PDFs
+## 🔹 Features
 
-Create embeddings (process PDFs to understand them)
+- Upload **one or more PDFs**  
+- **Create embeddings** (process PDFs to understand them)  
+- Ask questions and get **answers from your PDFs**  
+- See **which PDF and page** the answer came from  
 
-Ask questions and get answers from your PDFs
+---
 
-See which PDF and page the answer came from
+## ⚙️ How It Works
 
-#⚙️ How It Works
+1. Upload PDFs  
+2. Click **"Create Embeddings"** to process your PDFs  
+3. Ask a question in the box  
+4. Get the **answer** and **source PDF & page number**  
 
-You upload PDFs.
+We use **LangChain** and a **local AI model (Ollama)** to understand your PDFs.
 
-Click “Create Embeddings” to process your PDFs.
+---
 
-Ask a question in the box.
+## 💻 Requirements
 
-The app shows the answer and source PDF & page number.
+- Python 3.10+  
+- Virtual environment (optional but recommended)  
+- Install dependencies:
+🚀 How to Use
 
-We use LangChain and a local AI model (Ollama) to understand your PDFs.
+Upload PDFs: Drop your PDFs in the app
 
-#💻 Requirements
+Create Embeddings: Click the button to prepare your PDFs
 
-Python 3.10+
-
-Virtual environment (optional but recommended)
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-#🚀 How to Use
-
-Upload PDFs: Drop your PDFs in the app.
-
-Create Embeddings: Click the button to prepare your PDFs.
-
-Ask Questions: Type anything you want to know from your PDFs.
+Ask Questions: Type any question about your PDFs
 
 Example questions:
 
-“What is the main idea of chapter 2?”
+"What is the main idea of chapter 2?"
 
-“Explain this concept in simple words.”
+"Explain this concept in simple words."
 
-#📁 Project Structure
+📁 Project Structure
 Smart-PDF-Q-A-Assistant/
 │
 ├── app.py          # Main Streamlit app
@@ -59,13 +54,15 @@ Smart-PDF-Q-A-Assistant/
 ├── requirements.txt
 └── README.md
 
-#✅ Notes
+✅ Notes
 
-Make sure Python packages are installed in the same environment as Streamlit.
+Make sure Python packages are installed in the same environment as Streamlit
 
 Run Streamlit like this:
 
 streamlit run app.py
 
 
-PDFs stay local, nothing is uploaded online.
+PDFs stay local — nothing is uploaded online
+```bash
+pip install -r requirements.txt
