@@ -5,3 +5,5 @@ chromadb
 pypdf
 streamlit
 langchain-text-splitters
+langchain_ollama
+langchain_classic

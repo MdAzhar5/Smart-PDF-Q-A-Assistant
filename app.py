@@ -1,8 +1,8 @@
 import streamlit as st
 from langchain_chroma import Chroma
-from langchain_community.embeddings import OllamaEmbeddings
-from langchain_community.llms import Ollama
-from langchain.chains import RetrievalQA
+from langchain_ollama.embeddings import OllamaEmbeddings
+from langchain_ollama import ChatOllama
+from langchain_classic.chains.retrieval_qa.base import RetrievalQA
 
 st.set_page_config(page_title="PDF Q&A Assistant")
 
@@ -11,7 +11,7 @@ st.title("📄 Smart PDF Q&A Assistant")
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 db = Chroma(persist_directory="vectordb", embedding_function=embeddings)
 
-llm = Ollama(model="gpt-oss:20b-cloud")
+llm = ChatOllama(model="gpt-oss:20b-cloud")
 
 qa_chain = RetrievalQA.from_chain_type(
     llm=llm,
