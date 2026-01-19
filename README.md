@@ -44,16 +44,6 @@ Example questions:
 
 "Explain this concept in simple words."
 
-📁 Project Structure
-Smart-PDF-Q-A-Assistant/
-│
-├── app.py          # Main Streamlit app
-├── ingest.py       # Processes PDFs and creates embeddings
-├── data/pdfs/      # Put your PDF files here
-├── vectordb/       # Vector database for embeddings
-├── requirements.txt
-└── README.md
-
 ✅ Notes
 
 Make sure Python packages are installed in the same environment as Streamlit
