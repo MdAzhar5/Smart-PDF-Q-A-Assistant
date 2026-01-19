@@ -28,4 +28,5 @@ db = Chroma.from_documents(
     persist_directory=DB_DIR
 )
 
-print("✅ PDF ingestion complete!")
+print("PDF ingestion complete!")
+
