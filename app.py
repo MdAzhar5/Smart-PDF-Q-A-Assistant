@@ -31,10 +31,14 @@ if uploaded_files:
 
     st.success("PDFs uploaded successfully!")
 
+
+
+
+
 # ------------------ INGEST BUTTON ------------------
 st.markdown("### 2️⃣ Create Embeddings")
 
-if st.button("🚀 Run Ingest & Create Embeddings"):
+if st.button("Create Embeddings"):
     with st.spinner("Running ingestion pipeline..."):
         try:
             result = subprocess.run(
@@ -76,9 +80,7 @@ if query:
     st.subheader("Answer")
     st.write(response["result"])
 
-    st.subheader("Sources")
-    for doc in response["source_documents"]:
-        st.write(f"- Page {doc.metadata.get('page', 'N/A')}")
+
 
 
 
